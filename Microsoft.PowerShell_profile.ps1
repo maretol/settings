@@ -1,4 +1,5 @@
-Set-Location "C:\Users\Motoharu SOMEYA\Documents"
+$username = Get-Content env:username
+Set-Location "C:\Users\$username\Documents"
 Set-Alias open "Invoke-Item"
 Set-Alias less more
 Set-Alias utf8 Change-Encoding-utf
