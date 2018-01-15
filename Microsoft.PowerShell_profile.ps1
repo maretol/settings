@@ -1,5 +1,6 @@
 $username = Get-Content env:username
 Set-Location "C:\Users\$username\Documents"
+Set-PSReadlineOption -BellStyle None
 Set-Alias open "Invoke-Item"
 Set-Alias less more
 Set-Alias utf8 Change-Encoding-utf
